@@ -1,16 +1,29 @@
 " =============================
 " BASIC SETTINGS
 " =============================
+
+" Use spaces for tabs
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 set expandtab
-set smarttab
-set ai
-set si
+
+" Language specific indentation
+filetype plugin indent on " $VIMRUNTIME/indent/
+
+" Indent new line, usually overridden by filetype-plugin-indent
+set autoindent
+
+
 set number
 
+set mouse=c
+
+" Highlight row number where cursor is
+set cursorline
+set cursorlineopt=number
+
 syntax on
-filetype plugin indent on
 
 set ignorecase
 set smartcase
@@ -28,7 +41,7 @@ set cmdheight=1
 " TERMINAL
 " =============================
 
-" Opens terminal on right
+" Open terminal on right
 if has('terminal')
     function! RightTerminal(...)
         let l:args = join(a:000, ' ')
