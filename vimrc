@@ -59,3 +59,9 @@ if has('terminal')
     cabbrev terminal Term
 endif
 
+" =============================
+" HELP
+" =============================
+
+" Open help on right
+
