@@ -34,6 +34,6 @@ bold_italic_font auto
 
 
 # BEGIN_KITTY_THEME
-# Catppuccin-Frappe
+# VSCode_Dark
 include current-theme.conf
 # END_KITTY_THEME
