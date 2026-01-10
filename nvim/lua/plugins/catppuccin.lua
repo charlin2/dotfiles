@@ -1,15 +1,15 @@
 return {
   {
     "catppuccin/nvim",
-    enabled = false,
+    enabled = true,
     name = "catppuccin",
     lazy = false, -- load on startup
     priority = 1000, -- make sure colorscheme loads first
     opts = {
-      flavour = "frappe", -- latte, frappe, macchiato, mocha
+      flavour = "macchiato", -- latte, frappe, macchiato, mocha
       background = {
         light = "latte",
-        dark = "frappe",
+        dark = "macchiato",
       },
       transparent_background = false,
       term_colors = true,
