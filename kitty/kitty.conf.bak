@@ -9,7 +9,10 @@ tab_title_max_length 30
 tab_title_template "{index}: {title.split(' ')[0]}"
 macos_menubar_title_max_length 20
 
-hide_window_decorations titlebar-and-corners
+hide_window_decorations titlebar-only
+
+allow_remote_control yes
+term xterm-256color
 
 window_margin_width 0 1
 # wayland_titlebar_color system
@@ -18,11 +21,13 @@ detect_urls                 yes
 show_hyperlink_targets      yes
 underline_hyperlinks        hover
 
+cursor_trail 2
+
 # tab management
 map ctrl+t new_tab
+map ctrl+w close_tab
 map ctrl+l next_tab
 map ctrl+h previous_tab
-map ctrl+w close_tab
 
 # BEGIN_KITTY_FONTS
 font_family      family="JetBrainsMonoNL Nerd Font Mono"
@@ -34,6 +39,6 @@ bold_italic_font auto
 
 
 # BEGIN_KITTY_THEME
-# VSCode_Dark
+# Catppuccin-Frappe
 include current-theme.conf
 # END_KITTY_THEME
