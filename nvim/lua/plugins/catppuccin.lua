@@ -1,7 +1,7 @@
 return {
   {
     "catppuccin/nvim",
-    enabled = true,
+    enabled = false,
     name = "catppuccin",
     lazy = false, -- load on startup
     priority = 1000, -- make sure colorscheme loads first
