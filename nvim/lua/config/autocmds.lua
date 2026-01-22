@@ -22,3 +22,16 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
     vim.bo.filetype = "gotmpl"
   end,
 })
+
+-- Re-sign treesitter parsers on startup to fix macOS code signature issues
+-- This prevents crashes when loading parsers with invalid linker-signed signatures
+if vim.fn.has("mac") == 1 then
+  vim.api.nvim_create_autocmd("VimEnter", {
+    callback = function()
+      local parser_dir = vim.fn.stdpath("data") .. "/site/parser"
+      vim.fn.jobstart('for f in "' .. parser_dir .. '"/*.so; do codesign --force --sign - "$f" 2>/dev/null; done', {
+        detach = true,
+      })
+    end,
+  })
+end
