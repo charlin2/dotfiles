@@ -23,7 +23,7 @@ return {
         delay = 300,
         ignore_whitespace = false,
       },
-      current_line_blame_formatter = "<author>, <author_time:%d-%m-%Y> | <summary>",
+      current_line_blame_formatter = "<author>, <author_time:%m-%d-%Y> | <summary>",
     },
     keys = {
       { "<leader>gt", "<cmd>Gitsigns toggle_current_line_blame<cr>", desc = "Toggle inline blame" },
