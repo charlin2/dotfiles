@@ -10,6 +10,8 @@ alias pip='pip3'
 alias grep='grep --color=auto'
 alias dot='git add -A; git commit -m "."'
 
+alias k='kubectl'
+
 # if [[ $- == *i* && -z "$NVIM" && -z "$VIM_TERMINAL" ]]; then
 #   fastfetch
 # fi
