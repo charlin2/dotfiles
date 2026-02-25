@@ -27,6 +27,7 @@ cursor_trail 2
 map opt+l next_tab
 map opt+h previous_tab
 map opt+, set_tab_title
+map super+, set_tab_title
 
 # window management
 # splits layout for flexibility
@@ -59,7 +60,7 @@ map super+opt+shift+n detach_window
 map super+opt+shift+m detach_window ask
 
 # BEGIN_KITTY_FONTS
-font_family      family=Monaco postscript_name=Monaco
+font_family      family="JetBrainsMonoNL Nerd Font Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
