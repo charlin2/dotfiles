@@ -1,4 +1,4 @@
-export PS1="\[\033[38;5;76m\]\u \[\033[0m\]\W\$ "
+export PS1="\[\033[38;5;76m\]\u \[\033[0m\]\W 😜 "
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
 
@@ -11,6 +11,8 @@ alias grep='grep --color=auto'
 alias dot='git add -A; git commit -m "."'
 
 alias k='kubectl'
+
+# eval "$(starship init bash)"
 
 # if [[ $- == *i* && -z "$NVIM" && -z "$VIM_TERMINAL" ]]; then
 #   fastfetch
