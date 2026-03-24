@@ -9,6 +9,7 @@ alias python='python3'
 alias pip='pip3'
 alias grep='grep --color=auto'
 alias dot='git add -A; git commit -m "."'
+alias info='info --vi-keys'
 
 alias k='kubectl'
 
