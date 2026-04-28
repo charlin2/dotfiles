@@ -7,3 +7,4 @@ foo.*
 *.log
 data
 nvim/lua/local_env.lua
+.DS_Store
