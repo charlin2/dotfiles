@@ -8,3 +8,4 @@ foo.*
 data
 nvim/lua/local_env.lua
 .DS_Store
+.claude/
