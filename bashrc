@@ -10,10 +10,11 @@ alias pip='pip3'
 alias grep='grep --color=auto'
 alias dot='git add -A; git commit -m "."'
 alias info='info --vi-keys'
+alias gs='git status'
 
 alias k='kubectl'
 
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 
 # if [[ $- == *i* && -z "$NVIM" && -z "$VIM_TERMINAL" ]]; then
 #   fastfetch
@@ -23,3 +24,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
