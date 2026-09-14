@@ -1,3 +1,6 @@
+-- Use Homebrew Ruby for up to date version
+vim.env.PATH = "/opt/homebrew/opt/ruby/bin:" .. vim.env.PATH
+
 -- Set Go environment variables before anything else
 require("config.go_env")
 
